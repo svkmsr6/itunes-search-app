@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Card from '@material-ui/core/Card';
+import { formatTitle } from '../../../utils/string-utils';
 // import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
@@ -23,7 +24,7 @@ export default class Result extends Component {
             />
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2">
-                {`${data.trackName}-${data.artistName}`}
+                {formatTitle(`${data.trackName}-${data.artistName}`)}
               </Typography>
               <Typography component="p">
                 {`Straight out of ${data.collectionName} at a price of ${data.currency} ${data.trackPrice}`}
