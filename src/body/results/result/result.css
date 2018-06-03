@@ -1,0 +1,19 @@
+.result-container{
+    flex: 0 0 33% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.result-img {
+    align-self: center;
+    height: 150px; 
+    width: 150px;
+    flex: 0 0 150px;   
+    margin-top: 10px; 
+}
+
+.result-media {
+    height: 250px;
+    align-self: center;
+}
