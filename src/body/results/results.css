@@ -1,0 +1,13 @@
+.results-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.no-results {
+    color: #D3D0D8;
+    font-size: xx-large;
+    /* border: 2px #D3D0D8 solid; */
+    padding: 9%;
+    width: 100%;
+}
