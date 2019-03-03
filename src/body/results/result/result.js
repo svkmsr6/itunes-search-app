@@ -23,13 +23,19 @@ export default class Result extends Component {
               title={data.trackName}
             />
             <CardContent>
-              <Typography gutterBottom variant="headline" component="h2">
-                {formatTitle(`${data.trackName}-${data.artistName}`)}
+              <Typography variant="title" component="p">
+                {formatTitle(`${data.trackName}`)}
               </Typography>
-              <Typography component="p">
-                {`Straight out of ${data.collectionName} at a price of ${data.currency} ${data.trackPrice}`}
+              <Typography variant="caption" gutterBottom component="p">
+                {formatTitle(`${data.artistName}`)}
               </Typography>
-              <Typography component="p">
+              <Typography variant="button"  gutterBottom component="p">
+                {formatTitle(`${data.collectionName}`)}
+              </Typography>
+              <Typography variant="subheading" paragraph component="div">
+                {`Track available at a price of ${data.currency} ${data.trackPrice}`}
+              </Typography>
+              <Typography variant="subheading" component="div">
                 {`Grab the entire collection at a price of ${data.currency} ${data.collectionPrice}`}
               </Typography>
             </CardContent>

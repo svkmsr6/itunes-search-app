@@ -22,7 +22,7 @@ export default class Body extends Component {
             fetch(`https://itunes.apple.com/search?term=${encodeURI(this.state.searchTerm)}&media=music&limit=6`)
             .then(resp => resp.json())
             .then(data => this.setState({searchResults: data.results}))
-            .catch(err => console.err(err))
+            .catch(err => console.error(err))
         } else {
             swal({
                 title: "Inadequate Input!",
